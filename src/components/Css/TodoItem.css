@@ -1,0 +1,18 @@
+.card-body strong {
+  text-align: justify;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+
+.option button:hover{
+    color: aquamarine;
+    font-size: x-large;
+}
+.option button {
+    background-color: transparent;
+    border: none;
+}
+.done {
+    opacity: 0.5;
+    text-decoration: line-through;
+}

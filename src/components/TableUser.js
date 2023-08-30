@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { getAllUser } from './API/UserAPI'
+import { getAllUser } from '../API/UserAPI'
 import Table from 'react-bootstrap/Table';
 import ReactPaginate from "react-paginate";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import { postCreateUser } from './API/UserAPI';
+import { postCreateUser } from '../API/UserAPI';
 import { toast } from 'react-toastify';
 
 function Example(props) {

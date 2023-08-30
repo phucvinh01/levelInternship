@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import { putUpdateUser } from './API/UserAPI';
+import { putUpdateUser } from '../API/UserAPI';
 import { toast } from 'react-toastify';
 
 function ModalEdit(props) {

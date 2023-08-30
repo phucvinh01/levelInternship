@@ -3,6 +3,28 @@
   color: black;
 }
 
-.pagination {
-  justify-content: center
+.container {max-width: 1380px;}
+
+@media (max-width: 1600px) {
+  .container {max-width: 1200px;}
+}
+
+.form-control {
+  border:  none !important;
+  border-bottom: 1px solid darkseagreen !important;
+  border-radius: 0;
+}
+
+.form-control:focus{
+  font-size: larger !important;
+  color: darkseagreen !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.sticky{
+  position: sticky;
+  top: 80px;
+}
+.active{
+  border: 1px solid darkblue !important;
 }
