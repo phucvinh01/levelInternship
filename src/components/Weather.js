@@ -18,6 +18,8 @@ const Weather = () => {
                 } else {
                     navigator.geolocation.watchPosition((position) => {
                         setLocation(position);
+                        localStorage.setItem("latitude", position.coords.latitude)
+                        localStorage.setItem("longitude", position.coords.longitude)
                         setLat(position.coords.latitude)
                         setLong(position.coords.longitude)
                         getData(position.coords.latitude, position.coords.longitude)
@@ -34,11 +36,15 @@ const Weather = () => {
 
     useEffect(() => {
         handleWatchLocation()
-    });
+    }, []);
+    useEffect(() => {
+        if (localStorage.getItem("latitude")) {
+            getData(localStorage.getItem("latitude"), localStorage.getItem("longitude"))
+        }
+    })
 
 
     const getData = async (lat, long) => {
-        console.log(lat);
         if (lat) {
             let res = await getWeather(lat, long)
             if (res) {

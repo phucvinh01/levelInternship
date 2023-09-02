@@ -8,12 +8,9 @@ const Quotes = () => {
 
     const [quote, setQuote] = useState()
 
-
     useEffect(() => {
         getData()
     }, [])
-
-
 
     const getData = async () => {
         let res = await getQuote()

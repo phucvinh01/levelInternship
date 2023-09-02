@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { memo } from 'react'
 import { Button } from 'react-bootstrap'
 
 const FormTodo = ({ setNewTodo, inputRef, newTodo, update, handleDoneUpdate, handleInsert }) => {
+    console.log("re-render-form");
     return (
         <>
             <div className='d-flex'>
@@ -22,4 +23,4 @@ const FormTodo = ({ setNewTodo, inputRef, newTodo, update, handleDoneUpdate, han
     )
 }
 
-export default FormTodo
+export default memo(FormTodo)

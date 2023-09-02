@@ -9,6 +9,10 @@
   .container {max-width: 1200px;}
 }
 
+p{
+  padding: 0;
+}
+
 .form-control {
   border:  none !important;
   border-bottom: 1px solid darkseagreen !important;
@@ -27,4 +31,24 @@
 }
 .active{
   border: 1px solid darkblue !important;
+}
+
+.p-avatar
+{
+  img{
+    border: 3px solid blueviolet
+  }
+} 
+.slick-prev:before, .slick-next:before {
+  color: gray !important;
+  font-size: 24px !important;
+}
+.slick-disabled{
+  display: none !important;
+}
+
+.s-img{
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
 }
